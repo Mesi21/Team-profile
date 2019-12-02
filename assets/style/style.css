@@ -1,5 +1,254 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: turquoise;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
+
+hr{
+    width: 90%;
+  }
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #023743;
+    color: #fff;
+    padding: 30px; 
+    font-weight: bold;
+  }
+
+  .navbar ul{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .navbar li{
+    padding: 0px 50px;
+    list-style: none;
+  }
+  
+  .navbar a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar a:hover{
+    font-weight: bold;
+  }
+  
+  .main{
+    width: 85%;
+    margin: auto;
+    background-color: #ddd;
+  }
+  
+  #welcome-section{
+    display: flex;
+    height: 70vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-left: 35px;
+    margin-top: 0px;
+    background: linear-gradient(to right bottom, #053d51, #0e4355, #16495a, #1d505e, #255662, #255561, #25555f, #25545e, #1d4d57, #154550, #0c3e4a, #023743);
+    color: #fff;
+  }
+  
+  .logo{
+    width: 50%;
+    text-align: center;
+  }
+  
+  #our-logo{
+    max-height: 19rem;
+    max-width: 19rem;
+    border-radius: 50%;
+  }
+  
+  .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    line-height: 1.8rem;
+  }
+  
+  .salute{
+    font-size: 1.9rem;
+    padding: 15px;
+  }
+  
+  .text{
+    padding: 5px;
+  }
+  
+  #programming, #projects{
+    background-color: #ddd;
+  }
+  
+  #programming h1{
+    width: 100%;
+    background: #2F5E67;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #programming p{
+    padding: 15px;
+  }
+  
+  #projects h1{
+    width: 100%;
+    background: #2F5E67;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  #projects{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+  
+  #projects img{
+    box-sizing: border-box;
+    height: 415px;
+    margin: auto;
+    width: 100%;
+    border: 5px solid #2F5E67;
+  }
+  
+  .left, .right{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .project-tile h2{
+    text-align: center;
+    padding: 10px;
+    color: #2F5E67;
+  }
+  
+  #projects a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #023743;
+  }
+  
+  #hobbies{
+    background-color: black;
+    color: #5FC0D6;
+    font-weight: bold;
+  }
+  
+  #hobbies p{
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  #hobbies ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #hobbies li{
+    padding: 20px;
+  }
+  
+  #contact{
+    background-color: #023743;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .icons{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  #contact h1{
+    padding: 10px;
+    font-size: 1.5rem;
+  }
+  
+  #contact i{
+    padding-top: 30px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  #contact i:hover{
+    color: #5FC0D6;
+  }
+
+  @media screen and (max-width: 992px) {
+    #projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+   }
+    .left, .right{
+    display: flex;
+    flex-direction: column;
+   }
+    #contact{
+    background-color: #023743;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    #projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    }
+    .left, .right{
+    display: flex;
+    flex-direction: column;
+    }
+    
+    #contact{
+    background-color: #023743;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+  }
